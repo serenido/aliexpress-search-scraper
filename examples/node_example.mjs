@@ -2,7 +2,7 @@ import { ApifyClient } from "apify-client";
 
 const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
 
-const run = await client.actor("teegemspod/aliexpress-search-reliable").call({
+const run = await client.actor("serenido/aliexpress-search-reliable").call({
     "searchTerms": [
         "yoga mat"
     ],

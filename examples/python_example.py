@@ -4,7 +4,7 @@ from apify_client import ApifyClient
 
 client = ApifyClient(os.environ["APIFY_TOKEN"])
 
-run = client.actor("teegemspod/aliexpress-search-reliable").call(run_input={
+run = client.actor("serenido/aliexpress-search-reliable").call(run_input={
     "searchTerms": [
         "yoga mat"
     ],
