@@ -17,7 +17,7 @@ Runs in the cloud on Apify. No servers, no proxy setup, no code to maintain. **[
 ## Quick start: Python
 
 ```bash
-pip install apify-client
+pip install -U apify-client
 ```
 
 ```python
@@ -35,7 +35,7 @@ run = client.actor("serenido/aliexpress-search-reliable").call(run_input={
     "minRating": 4.5
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item)
 ```
 
@@ -147,6 +147,7 @@ Download as JSON, CSV or Excel, or connect to Make, Zapier or n8n.
 - [Football xG Scraper](https://github.com/serenido/football-xg-scraper): Understat xG tables, matches, shots, players and lineups.
 - [Weibo Hot Search Scraper](https://github.com/serenido/weibo-hot-search): the live 微博热搜 list, changes since your last run, top posts per topic.
 - [AliExpress Dropshipping Scraper](https://github.com/serenido/aliexpress-dropshipping): winning products with shipping to your country, landed cost and profit.
+- [WeChat Official Account Scraper](https://github.com/serenido/wechat-official-account-scraper): 公众号 articles by keyword or link, with full text, account, author and date.
 
 ## Support
 

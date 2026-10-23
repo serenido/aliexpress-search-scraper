@@ -14,5 +14,5 @@ run = client.actor("serenido/aliexpress-search-reliable").call(run_input={
     "minRating": 4.5
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item)
